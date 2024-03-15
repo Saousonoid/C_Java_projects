@@ -1,0 +1,3 @@
+1- Run Server.bat
+2- Run Client.bat 3 times
+3- press start button on each client at a small interval
