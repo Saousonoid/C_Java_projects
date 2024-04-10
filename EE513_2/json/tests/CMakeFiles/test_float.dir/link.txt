@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/test_float.dir/test_float.c.o -o test_float  -Wl,-rpath,/home/admin/assign2/json-c-build ../libjson-c.so.5.3.0 -lm 

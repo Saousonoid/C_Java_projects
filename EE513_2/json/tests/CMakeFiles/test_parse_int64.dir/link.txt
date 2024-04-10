@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/test_parse_int64.dir/test_parse_int64.c.o -o test_parse_int64  -Wl,-rpath,/home/admin/assign2/json-c-build ../libjson-c.so.5.3.0 -lm 

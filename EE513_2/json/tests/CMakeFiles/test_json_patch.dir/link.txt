@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/test_json_patch.dir/test_json_patch.c.o -o test_json_patch  -Wl,-rpath,/home/admin/assign2/json-c-build ../libjson-c.so.5.3.0 -lm 

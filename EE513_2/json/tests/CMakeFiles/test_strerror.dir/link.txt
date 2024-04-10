@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/test_strerror.dir/test_strerror.c.o -o test_strerror  -Wl,-rpath,/home/admin/assign2/json-c-build ../libjson-c.so.5.3.0 -lm 

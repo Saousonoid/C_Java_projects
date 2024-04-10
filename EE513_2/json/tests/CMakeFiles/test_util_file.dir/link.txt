@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/test_util_file.dir/test_util_file.c.o -o test_util_file  -Wl,-rpath,/home/admin/assign2/json-c-build ../libjson-c.so.5.3.0 -lm 

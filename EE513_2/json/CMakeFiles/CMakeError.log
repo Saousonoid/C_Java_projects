@@ -1,0 +1,146 @@
+Determining if the include file xlocale.h exists failed with the following output:
+Change Dir: /home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-e2kqoW
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c6ea5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c6ea5.dir/build.make CMakeFiles/cmTC_c6ea5.dir/build
+gmake[1]: Entering directory '/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-e2kqoW'
+Building C object CMakeFiles/cmTC_c6ea5.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_c6ea5.dir/CheckIncludeFile.c.o -c /home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-e2kqoW/CheckIncludeFile.c
+/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-e2kqoW/CheckIncludeFile.c:1:10: fatal error: xlocale.h: No such file or directory
+    1 | #include <xlocale.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_c6ea5.dir/build.make:78: CMakeFiles/cmTC_c6ea5.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-e2kqoW'
+gmake: *** [Makefile:127: cmTC_c6ea5/fast] Error 2
+
+
+
+Determining if the _isnan exist failed with the following output:
+Change Dir: /home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-1Y3W29
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_82f04/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_82f04.dir/build.make CMakeFiles/cmTC_82f04.dir/build
+gmake[1]: Entering directory '/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-1Y3W29'
+Building C object CMakeFiles/cmTC_82f04.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_82f04.dir/CheckSymbolExists.c.o -c /home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-1Y3W29/CheckSymbolExists.c
+/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-1Y3W29/CheckSymbolExists.c: In function ‘main’:
+/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-1Y3W29/CheckSymbolExists.c:8:19: error: ‘_isnan’ undeclared (first use in this function)
+    8 |   return ((int*)(&_isnan))[argc];
+      |                   ^~~~~~
+/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-1Y3W29/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_82f04.dir/build.make:78: CMakeFiles/cmTC_82f04.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-1Y3W29'
+gmake: *** [Makefile:127: cmTC_82f04/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _isnan
+  return ((int*)(&_isnan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _finite exist failed with the following output:
+Change Dir: /home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-jlZ6CQ
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c7714/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c7714.dir/build.make CMakeFiles/cmTC_c7714.dir/build
+gmake[1]: Entering directory '/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-jlZ6CQ'
+Building C object CMakeFiles/cmTC_c7714.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_c7714.dir/CheckSymbolExists.c.o -c /home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-jlZ6CQ/CheckSymbolExists.c
+/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-jlZ6CQ/CheckSymbolExists.c: In function ‘main’:
+/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-jlZ6CQ/CheckSymbolExists.c:8:19: error: ‘_finite’ undeclared (first use in this function)
+    8 |   return ((int*)(&_finite))[argc];
+      |                   ^~~~~~~
+/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-jlZ6CQ/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_c7714.dir/build.make:78: CMakeFiles/cmTC_c7714.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-jlZ6CQ'
+gmake: *** [Makefile:127: cmTC_c7714/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _finite
+  return ((int*)(&_finite))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _doprnt exist failed with the following output:
+Change Dir: /home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-A0QnoT
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3749e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3749e.dir/build.make CMakeFiles/cmTC_3749e.dir/build
+gmake[1]: Entering directory '/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-A0QnoT'
+Building C object CMakeFiles/cmTC_3749e.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_3749e.dir/CheckSymbolExists.c.o -c /home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-A0QnoT/CheckSymbolExists.c
+/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-A0QnoT/CheckSymbolExists.c: In function ‘main’:
+/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-A0QnoT/CheckSymbolExists.c:8:19: error: ‘_doprnt’ undeclared (first use in this function)
+    8 |   return ((int*)(&_doprnt))[argc];
+      |                   ^~~~~~~
+/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-A0QnoT/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_3749e.dir/build.make:78: CMakeFiles/cmTC_3749e.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-A0QnoT'
+gmake: *** [Makefile:127: cmTC_3749e/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _doprnt
+  return ((int*)(&_doprnt))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAS_GNU_WARNING_LONG failed with the following output:
+Change Dir: /home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-yZ5cWF
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_69a46/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_69a46.dir/build.make CMakeFiles/cmTC_69a46.dir/build
+gmake[1]: Entering directory '/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-yZ5cWF'
+Building C object CMakeFiles/cmTC_69a46.dir/src.c.o
+/usr/bin/cc -DHAS_GNU_WARNING_LONG -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_69a46.dir/src.c.o -c /home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-yZ5cWF/src.c
+/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-yZ5cWF/src.c:3:9: warning: missing terminating " character
+    3 | __asm__(".section .gnu.json_object_get
+      |         ^
+/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-yZ5cWF/src.c:3:9: error: missing terminating " character
+    3 | __asm__(".section .gnu.json_object_get
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-yZ5cWF/src.c:4:9: error: expected string literal before ‘.’ token
+    4 |         .ascii "Please link against libjson-c instead of libjson"
+      |         ^
+/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-yZ5cWF/src.c:5:14: warning: missing terminating " character
+    5 |         .text");
+      |              ^
+/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-yZ5cWF/src.c:5:14: error: missing terminating " character
+    5 |         .text");
+      |              ^~~
+gmake[1]: *** [CMakeFiles/cmTC_69a46.dir/build.make:78: CMakeFiles/cmTC_69a46.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/admin/assign2/json-c-build/CMakeFiles/CMakeScratch/TryCompile-yZ5cWF'
+gmake: *** [Makefile:127: cmTC_69a46/fast] Error 2
+
+
+Source file was:
+
+extern void json_object_get();
+__asm__(".section .gnu.json_object_get
+	.ascii "Please link against libjson-c instead of libjson"
+	.text");
+int main(int c, char *v) { return 0;}
+
+

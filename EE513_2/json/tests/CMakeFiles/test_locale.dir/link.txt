@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/test_locale.dir/test_locale.c.o -o test_locale  -Wl,-rpath,/home/admin/assign2/json-c-build ../libjson-c.so.5.3.0 -lm 

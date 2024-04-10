@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/test_set_value.dir/test_set_value.c.o -o test_set_value  -Wl,-rpath,/home/admin/assign2/json-c-build ../libjson-c.so.5.3.0 -lm 

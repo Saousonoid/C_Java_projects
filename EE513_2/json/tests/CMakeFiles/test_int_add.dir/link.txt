@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/test_int_add.dir/test_int_add.c.o -o test_int_add  -Wl,-rpath,/home/admin/assign2/json-c-build ../libjson-c.so.5.3.0 -lm 
