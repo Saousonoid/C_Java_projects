@@ -1,2 +1,2 @@
-# C-_projects
+# C++ Projects
 DCU projects written in c++
